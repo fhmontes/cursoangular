@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-parametros',
@@ -12,7 +12,8 @@ export class ParametrosComponent implements OnInit {
   public nombre: string;
 
   constructor(
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private router: Router
   ) { 
     this.title = 'Paso de Parametros';
   }
@@ -24,4 +25,11 @@ export class ParametrosComponent implements OnInit {
     });
   }
 
+  redirigir1(): void{
+    this.router.navigate(['/home']);
+  }
+
+  redirigir2(): void{
+    this.router.navigate(['/parametros', 'Alejandra']);
+  }
 }
