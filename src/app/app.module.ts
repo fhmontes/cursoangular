@@ -9,6 +9,9 @@ import { HolaComponent } from './hola/hola.component';
 import { PersonaComponent } from './persona/persona.component';
 import { CursoComponent } from './curso/curso.component';
 import { EstiloComponent } from './estilo/estilo.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { HomeComponent } from './home/home.component';
+import { ParametrosComponent } from './parametros/parametros.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { EstiloComponent } from './estilo/estilo.component';
     HolaComponent,
     PersonaComponent,
     CursoComponent,
-    EstiloComponent
+    EstiloComponent,
+    PageNotFoundComponent,
+    HomeComponent,
+    ParametrosComponent
   ],
   imports: [
     BrowserModule,

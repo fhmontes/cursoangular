@@ -1,4 +1,4 @@
-<div>
+<div style="text-align: center;">
   <h1>{{title}}</h1>
 </div>
 <hr/>
@@ -6,4 +6,14 @@
 <!-- app-persona></app-persona -->
 <!-- app-curso></app-curso -->
 <!-- app-estilo></app-estilo -->
+<nav>
+  <a [routerLink]="['/home']" [routerLinkActive]="['activado']">Inicio</a> | 
+  <a [routerLink]="['/hola']" [routerLinkActive]="['activado']">Hola Mundo</a> | 
+  <a [routerLink]="['/persona']" [routerLinkActive]="['activado']">Propiedades</a> |
+  <a [routerLink]="['/curso']" [routerLinkActive]="['activado']">Directivas</a> |
+  <a [routerLink]="['/estilo']" [routerLinkActive]="['activado']">Directivas de estilos</a> |
+  <a [routerLink]="['/parametros','Juan']" [routerLinkActive]="['activado']">Parametros</a> | 
+</nav>
+
+<hr/>
 <router-outlet></router-outlet>
