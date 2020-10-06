@@ -12,6 +12,8 @@ import { EstiloComponent } from './estilo/estilo.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HomeComponent } from './home/home.component';
 import { ParametrosComponent } from './parametros/parametros.component';
+import { HeaderComponent } from './template/header/header.component';
+import { NavigationComponent } from './template/navigation/navigation.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { ParametrosComponent } from './parametros/parametros.component';
     EstiloComponent,
     PageNotFoundComponent,
     HomeComponent,
-    ParametrosComponent
+    ParametrosComponent,
+    HeaderComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
