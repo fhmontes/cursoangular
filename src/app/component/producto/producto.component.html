@@ -1,0 +1,19 @@
+<h4>{{ title }}</h4>
+<div class="input-group">
+    <input type="text" class="form-control" placeholder="Nombre de nuevo producto"
+           [(ngModel)]="nombreProducto">
+    <div class="input-group-append">
+        <button (click)="guardarProducto()" class="btn btn-primary">Adicionar Producto</button>
+    </div>
+</div>
+<p *ngIf="nombreProducto">
+    El producto a guardar es <strong>{{ nombreProducto }}</strong>
+</p>
+<br/>
+<ul class="list-group">
+    <li *ngFor="let prod of listaProductos; let i=index"
+        class="list-group-item d-flex justify-content-between align-items-center">
+        {{ prod }}
+        <button (click)="eliminarProducto(i)" class="btn btn-danger">Eliminar</button>
+    </li>
+</ul>

@@ -5,10 +5,11 @@ import { Routes, RouterModule } from '@angular/router';
 import { HolaComponent } from './hola/hola.component';
 import { PersonaComponent } from './persona/persona.component';
 import { CursoComponent } from './curso/curso.component';
-import { EstiloComponent } from './estilo/estilo.component';
+import { EstiloComponent } from './component/estilo/estilo.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HomeComponent } from './home/home.component';
 import { ParametrosComponent } from './parametros/parametros.component';
+import { ProductoComponent } from './component/producto/producto.component';
 
 // Definir rutas de la aplicacion
 const routes: Routes = [
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'curso', component: CursoComponent },
   { path: 'estilo', component: EstiloComponent },
   { path: 'parametros/:param_nombre', component: ParametrosComponent },
+  { path: 'producto', component: ProductoComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
 

@@ -3,17 +3,20 @@ import { NgModule } from '@angular/core';
 
 // Importar archivo de rutas
 import { AppRoutingModule } from './app-routing.module';
+// Importar modulo para trabajar con formularios
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HolaComponent } from './hola/hola.component';
 import { PersonaComponent } from './persona/persona.component';
 import { CursoComponent } from './curso/curso.component';
-import { EstiloComponent } from './estilo/estilo.component';
+import { EstiloComponent } from './component/estilo/estilo.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HomeComponent } from './home/home.component';
 import { ParametrosComponent } from './parametros/parametros.component';
 import { HeaderComponent } from './template/header/header.component';
 import { NavigationComponent } from './template/navigation/navigation.component';
+import { ProductoComponent } from './component/producto/producto.component';
 
 @NgModule({
   declarations: [
@@ -26,11 +29,13 @@ import { NavigationComponent } from './template/navigation/navigation.component'
     HomeComponent,
     ParametrosComponent,
     HeaderComponent,
-    NavigationComponent
+    NavigationComponent,
+    ProductoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule // <-- Agregar archivo de rutas
+    AppRoutingModule, // <-- Agregar archivo de rutas
+    FormsModule       // <-- Agregar modulo para formularios
   ],
   providers: [],
   bootstrap: [AppComponent]
