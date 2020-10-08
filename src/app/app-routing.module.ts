@@ -10,6 +10,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { HomeComponent } from './home/home.component';
 import { ParametrosComponent } from './parametros/parametros.component';
 import { ProductoComponent } from './component/producto/producto.component';
+import { FiltrosComponent } from './component/filtros/filtros.component';
+import { PlantillaComponent } from './component/plantilla/plantilla.component';
 
 // Definir rutas de la aplicacion
 const routes: Routes = [
@@ -21,6 +23,8 @@ const routes: Routes = [
   { path: 'estilo', component: EstiloComponent },
   { path: 'parametros/:param_nombre', component: ParametrosComponent },
   { path: 'producto', component: ProductoComponent },
+  { path: 'filtros', component: FiltrosComponent },
+  { path: 'plantilla', component: PlantillaComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
 

@@ -5,6 +5,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 // Importar modulo para trabajar con formularios
 import { FormsModule } from '@angular/forms';
+// Importar nuestro filtro
+import { CalculadoraPipe } from './pipes/calculadora.pipe';
 
 import { AppComponent } from './app.component';
 import { HolaComponent } from './hola/hola.component';
@@ -17,6 +19,8 @@ import { ParametrosComponent } from './parametros/parametros.component';
 import { HeaderComponent } from './template/header/header.component';
 import { NavigationComponent } from './template/navigation/navigation.component';
 import { ProductoComponent } from './component/producto/producto.component';
+import { FiltrosComponent } from './component/filtros/filtros.component';
+import { PlantillaComponent } from './component/plantilla/plantilla.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +34,10 @@ import { ProductoComponent } from './component/producto/producto.component';
     ParametrosComponent,
     HeaderComponent,
     NavigationComponent,
-    ProductoComponent
+    ProductoComponent,
+    FiltrosComponent,
+    CalculadoraPipe,
+    PlantillaComponent
   ],
   imports: [
     BrowserModule,

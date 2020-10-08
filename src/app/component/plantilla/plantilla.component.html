@@ -1,0 +1,19 @@
+<h2>{{ title }}</h2>
+
+<button (click)="cambiar()">Cambiar estado administrador</button>
+<br/><br/>
+
+<div *ngIf="admin">
+    <strong style="background: yellow;">Eres administrador</strong>
+</div>
+<div *ngIf="!admin">
+    <strong style="background: red;">No eres administrador</strong>
+</div>
+
+<div *ngIf="admin; then siAdmin else noAdmin"></div>
+<ng-template #siAdmin>
+    <strong style="background: yellow;">Eres administrador</strong>
+</ng-template>
+<ng-template #noAdmin>
+    <strong style="background: red;">No eres administrador</strong>
+</ng-template>
