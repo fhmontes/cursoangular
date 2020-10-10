@@ -13,6 +13,7 @@ import { ProductoComponent } from './component/producto/producto.component';
 import { FiltrosComponent } from './component/filtros/filtros.component';
 import { PlantillaComponent } from './component/plantilla/plantilla.component';
 import { CocheComponent } from './component/coche/coche.component';
+import { ClienteComponent } from './component/cliente/cliente.component';
 
 // Definir rutas de la aplicacion
 const routes: Routes = [
@@ -27,6 +28,7 @@ const routes: Routes = [
   { path: 'filtros', component: FiltrosComponent },
   { path: 'plantilla', component: PlantillaComponent },
   { path: 'coche', component: CocheComponent },
+  { path: 'cliente', component: ClienteComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
 

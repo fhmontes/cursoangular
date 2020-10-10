@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+// Importar HttpModulo para sevicios web
+import { HttpClientModule } from '@angular/common/http';
 // Importar archivo de rutas
 import { AppRoutingModule } from './app-routing.module';
 // Importar modulo para trabajar con formularios
@@ -22,6 +23,7 @@ import { ProductoComponent } from './component/producto/producto.component';
 import { FiltrosComponent } from './component/filtros/filtros.component';
 import { PlantillaComponent } from './component/plantilla/plantilla.component';
 import { CocheComponent } from './component/coche/coche.component';
+import { ClienteComponent } from './component/cliente/cliente.component';
 
 @NgModule({
   declarations: [
@@ -39,12 +41,14 @@ import { CocheComponent } from './component/coche/coche.component';
     FiltrosComponent,
     CalculadoraPipe,
     PlantillaComponent,
-    CocheComponent
+    CocheComponent,
+    ClienteComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule, // <-- Agregar archivo de rutas
-    FormsModule       // <-- Agregar modulo para formularios
+    FormsModule,      // <-- Agregar modulo para formularios
+    HttpClientModule  // <-- Agregar modulo para servicios web
   ],
   providers: [],
   bootstrap: [AppComponent]
