@@ -21,6 +21,7 @@ import { NavigationComponent } from './template/navigation/navigation.component'
 import { ProductoComponent } from './component/producto/producto.component';
 import { FiltrosComponent } from './component/filtros/filtros.component';
 import { PlantillaComponent } from './component/plantilla/plantilla.component';
+import { CocheComponent } from './component/coche/coche.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { PlantillaComponent } from './component/plantilla/plantilla.component';
     ProductoComponent,
     FiltrosComponent,
     CalculadoraPipe,
-    PlantillaComponent
+    PlantillaComponent,
+    CocheComponent
   ],
   imports: [
     BrowserModule,
